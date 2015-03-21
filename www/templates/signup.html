@@ -12,16 +12,49 @@
           <input type="text" placeholder="zip (full zipcode ex. 07704-3203)" ng-model="newUser.zip">
         </label>
         <label class="item item-input item-select">
-            <div class="input-label">
-              education
-            </div>
-            <select>
-              <option value="polisci">political science</option>
-              <option value="math">mathematics</option>
-              <option value="science">science</option>
-              <option value="english">english</option>
-            </select>
-          </label>
+          <div class="input-label">
+            education field
+          </div>
+          <select ng-model="newUser.education">
+            <option value="polisci">political science</option>
+            <option value="math">mathematics</option>
+            <option value="science">science</option>
+            <option value="english">english</option>
+          </select>
+        </label>
+        <label class="item item-input item-select">
+          <div class="input-label">
+            education focus
+          </div>
+          <select ng-model="newUser.education_sub">
+            <option value="polisci">political science</option>
+            <option value="math">mathematics</option>
+            <option value="science">science</option>
+            <option value="english">english</option>
+          </select>
+        </label>
+        <label class="item item-input item-select">
+          <div class="input-label">
+            occupationial field
+          </div>
+          <select ng-model="newUser.occupation">
+            <option value="agriculture">management</option>
+            <option value="mining">mining</option>
+            <option value="manufacturing">manufacturing</option>
+            <option value="education">educational services</option>
+          </select>
+        </label>
+        <label class="item item-input item-select">
+          <div class="input-label">
+            occupational focus
+          </div>
+          <select ng-model="newUser.occupation_sub">
+            <option value="financial">financial</option>
+            <option value="math">mathematics</option>
+            <option value="science">science</option>
+            <option value="english">english</option>
+          </select>
+        </label>
         <label class="item item-input">
           <input type="text" placeholder="email" ng-model="newUser.email">
         </label>
