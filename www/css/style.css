@@ -16,9 +16,19 @@
 	  background:         linear-gradient(0deg, #5f2c82 10%, #49a09d 90%); /* W3C */
 }
 
+#logo-main {
+	border-radius: 50%;
+	width: 125px;
+}
+
+#logo-wrapper {
+	display: table;
+	margin: 0 auto;
+}
+
 .main-header {
 	text-align: center;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Karla', sans-serif;
 	color: #FFF;
 	text-shadow: 1px 1px 0px #5F2C82;
 	font-size: 40px;
