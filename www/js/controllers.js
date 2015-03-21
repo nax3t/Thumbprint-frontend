@@ -1,15 +1,33 @@
 angular.module('thumbprint.controllers', [])
 
 .controller("AppCtrl", ['$scope', '$ionicModal', '$http', '$rootScope', '$state', '$ionicLoading', function($scope, $ionicModal, $http, $rootScope, $state, $ionicLoading) {
-  $scope.user = $rootScope.current_user;
-
-  return $scope.logout = function() {
+  // Logout logic
+  $scope.logout = function() {
     $ionicLoading.show();
     return $http["delete"]("http://localhost:3000/sessions/" + $rootScope.current_user.id + ".json").success(function(data) {
       $ionicLoading.hide()
       return $state.go('main');
     });
   }
+
+  // Login logic
+  $scope.addSession = function(newUser) {
+    $ionicLoading.show();
+    return $http.post("http://localhost:3000/login.json", {
+      user: newUser
+    }).success(function(user) {
+      $rootScope.current_user = user;
+     $ionicLoading.hide();
+      return $state.go('app.welcome');
+    }).error(function(data) {
+      $ionicLoading.hide();
+      $scope.error = "Invalid username or password"
+    });
+  };
+
+  // Assign User
+  $scope.user = $rootScope.current_user;
+
 }])
 
 .controller("UsersCtrl", [
@@ -35,20 +53,8 @@ angular.module('thumbprint.controllers', [])
   }
 ])
 
-.controller("SessionsCtrl", [
-  "$scope", "$http", "$rootScope", '$state', '$ionicLoading', function($scope, $http, $rootScope, $state, $ionicLoading) {
-    return $scope.addSession = function(newUser) {
-      $ionicLoading.show();
-      return $http.post("http://localhost:3000/login.json", {
-        user: newUser
-      }).success(function(user) {
-        $rootScope.current_user = user;
-       $ionicLoading.hide();
-        return $state.go('app.welcome');
-      }).error(function(data) {
-        $ionicLoading.hide();
-        $scope.error = "Invalid username or password"
-      });
-    };
-  }
-])
+// .controller("SessionsCtrl", [
+//   "$scope", "$http", "$rootScope", '$state', '$ionicLoading', function($scope, $http, $rootScope, $state, $ionicLoading) {
+    
+//   }
+// ])

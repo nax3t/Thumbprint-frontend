@@ -15,7 +15,7 @@ var app = angular.module("thumbprint", ["ionic", "thumbprint.factories", "thumbp
   $stateProvider.state("main", {
     url: "/",
     templateUrl: "templates/main.html",
-    controller: "UsersCtrl"
+    controller: "AppCtrl"
   }).state("app.welcome", {
     url: "/welcome",
     views: {
@@ -28,10 +28,6 @@ var app = angular.module("thumbprint", ["ionic", "thumbprint.factories", "thumbp
     url: "/signup",
     templateUrl: "templates/signup.html",
     controller: "UsersCtrl"
-  }).state("login", {
-    url: "/login",
-    templateUrl: "templates/login.html",
-    controller: "SessionsCtrl"
   }).state("app", {
     url: "/app",
     abstract: true,
