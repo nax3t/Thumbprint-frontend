@@ -1,0 +1,47 @@
+
+/*  ################################################################
+  1. General styles I implemented (Global Varialbes)
+################################################################# */
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+
+.main-bg {
+	background: -webkit-linear-gradient(0deg, #5f2c82 10%, #49a09d 90%); /* Chrome 10+, Saf5.1+ */
+	  background:    -moz-linear-gradient(0deg, #5f2c82 10%, #49a09d 90%); /* FF3.6+ */
+	  background:     -ms-linear-gradient(0deg, #5f2c82 10%, #49a09d 90%); /* IE10 */
+	  background:      -o-linear-gradient(0deg, #5f2c82 10%, #49a09d 90%); /* Opera 11.10+ */
+	  background:         linear-gradient(0deg, #5f2c82 10%, #49a09d 90%); /* W3C */
+}
+
+.main-header {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	color: #FFF;
+	text-shadow: 1px 1px 0px #5F2C82;
+	font-size: 40px;
+	letter-spacing: 5px;
+		font-weight: bold;
+}
+
+.main-logo {
+	text-align: center;
+	color: #FFF;
+	text-shadow: 1px 1px 0px #5F2C82;
+	font-size: 50px;
+}
+
+.main-padding  {
+	margin: 50px 0px;
+}
+
+.ion-power-margin {
+	margin-right: 5px;
+}
+
+.errors {
+	color: red;
+	font-weight: bold;
+}
