@@ -6,13 +6,24 @@
         <h1 class="main-header">Thumbprint</h1>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
-        <a class="button button-block button-light button-outline" href="#/signup">Sign Up</a>
+    <form ng-submit="addSession(newUser)">
+      <div class="list list-inset">
+        <span class="errors">{{ error }}</span>
+        <label class="item item-input">
+          <input type="text" placeholder="email" ng-model="newUser.username">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="password" ng-model="newUser.password">
+        </label>
+        <div class="row">
+          <div class="col" id="login-col">
+            <a class="button button-block button-positive" type="submit">Login</a>
+          </div>
+          <div class="col">
+            <a class="button button-block button-positive" id="button-purple" href="#/signup">Sign Up</a>
+          </div>
       </div>
-      <div class="col">
-        <a class="button button-block button-light button-outline" href="#/login">Login</a>
-      </div>
+    </form>
     </div>
   </ion-content>
 </ion-view>

@@ -55,3 +55,43 @@
 	color: red;
 	font-weight: bold;
 }
+
+/* Auth Forms */
+textarea, input[type="text"], input[type="password"], input[type="datetime"],
+ input[type="datetime-local"], input[type="date"], input[type="month"],
+  input[type="time"], input[type="week"], input[type="number"],
+   input[type="email"], input[type="url"], input[type="search"],
+    input[type="tel"], input[type="color"] {
+	color: #FFF;
+}
+
+.list-inset {
+	background-color: rgba(0,0,0,0);
+}
+
+.item {
+	background-color: rgba(0,0,0,0);
+	margin-bottom: 10px;
+}
+
+.col {
+	padding: 0;
+}
+
+.row {
+	padding: 0;
+}
+
+#login-col {
+	padding-right: 10px;
+}
+
+.button-positive {
+	border: none;
+}
+
+#button-purple {
+	background-color: #724788;
+}#button-purple.activated {
+	background-color: #57346b;
+};
