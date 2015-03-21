@@ -41,15 +41,15 @@ angular.module('thumbprint.controllers', [])
         return $state.go('app.welcome');
       }).error(function(data) {
         if (data.zip) {
-        console.log(data.zip[0]);
+        console.log("Zip code: " + data.zip[0]);
       } else if (data.first) {
-        console.log(data.first[0]);
+        console.log("First name: " + data.first[0]);
       } else if (data.last) {
-        console.log(data.last[0]);
+        console.log("Last name: " + data.last[0]);
       } else if (data.education) {
-        console.log(data.education[0]);
+        console.log("Education: " + data.education[0]);
       } else if (data.occupation) {
-        console.log(data.occupation[0]);
+        console.log("Occupation: " + data.occupation[0]);
       }
         $scope.email = "";
         $scope.password = "";
