@@ -7,6 +7,10 @@ html, body {
 	height: 100%;
 }
 
+a {
+	color: #FFF;
+}
+
 .wrapper {
 	min-height: 100%;
 	height: auto !important;
@@ -78,12 +82,25 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"],
 	color: #FFF;
 }
 
+.input-label {
+	color: #AAA;
+}
+
+.item-select select {
+	background: rgba(0,0,0,0);
+	color: #AAA;
+}
+
+.item-select select option {
+	color: #474747;
+}
+
 .list-inset {
 	background-color: rgba(0,0,0,0);
 }
 
 .item {
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,.09);
 	margin-bottom: 10px;
 }
 

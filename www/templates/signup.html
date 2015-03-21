@@ -1,7 +1,27 @@
-<ion-view title="Signup">
+<ion-view title="Signup" class="main-bg">
   <ion-content class="has-header">
     <form ng-submit="createUser(newUser)">
       <div class="list list-inset">
+        <label class="item item-input">
+          <input type="text" placeholder="first name" ng-model="newUser.first">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="last name" ng-model="newUser.last">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="zip (full zipcode ex. 07704-3203)" ng-model="newUser.zip">
+        </label>
+        <label class="item item-input item-select">
+            <div class="input-label">
+              education
+            </div>
+            <select>
+              <option value="polisci">political science</option>
+              <option value="math">mathematics</option>
+              <option value="science">science</option>
+              <option value="english">english</option>
+            </select>
+          </label>
         <label class="item item-input">
           <input type="text" placeholder="email" ng-model="newUser.email">
         </label>
@@ -14,10 +34,10 @@
           <input type="password" placeholder="password confirmation" ng-model="newUser.password_confirmation">
         </label>
         <div>
-          <button class="button button-block button-positive" type="submit">Create account</button>
+          <button class="button button-block button-positive" type="submit">CREATE ACCOUNT</button>
         </div>
         <div style="text-align: center">
-          Or <a href="#/">Already have an account?</a>
+          <a href="#/">Already have an account?</a>
         </div>
       </div>
     </form>
