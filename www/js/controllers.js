@@ -1,6 +1,9 @@
 angular.module('thumbprint.controllers', [])
 
 .controller("AppCtrl", ['$scope', '$ionicModal', '$http', '$rootScope', '$state', '$ionicLoading', function($scope, $ionicModal, $http, $rootScope, $state, $ionicLoading) {
+  // Logo
+  $scope.logo = "img/logo-tp.png";
+
   // Logout logic
   $scope.logout = function() {
     $ionicLoading.show();
