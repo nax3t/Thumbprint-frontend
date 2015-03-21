@@ -3,68 +3,61 @@
     <form ng-submit="createUser(newUser)">
       <div class="list list-inset">
         <label class="item item-input">
-          <input type="text" placeholder="first name" ng-model="newUser.first">
+          <input type="text" placeholder="First Name" ng-model="newUser.first" required>
         </label>
         <label class="item item-input">
-          <input type="text" placeholder="last name" ng-model="newUser.last">
+          <input type="text" placeholder="Last Name" ng-model="newUser.last">
         </label>
         <label class="item item-input">
-          <input type="text" placeholder="zip (full zipcode ex. 07704-3203)" ng-model="newUser.zip">
+          <input type="text" placeholder="Zip (full zipcode ex. 07704-3203)" ng-model="newUser.zip" required>
         </label>
         <label class="item item-input item-select">
           <div class="input-label">
-            education field
+            Education
           </div>
-          <select ng-model="newUser.education">
-            <option value="polisci">political science</option>
-            <option value="math">mathematics</option>
-            <option value="science">science</option>
-            <option value="english">english</option>
+          <select ng-model="newUser.education" required>
+            <optgroup label="Science and engineering">
+              <option value="Computers, Mathematics, and Statistics">Computers, Mathematics, and Statistics</option>
+            </optgroup>
+            <optgroup label="Business">
+              <option value="Business">Business (includes business management, accounting, general
+business)</option>
+            </optgroup>
+            <optgroup label="Education">
+              <option value="education">Education (includes elementary education, general education)</option>
+            </optgroup>
           </select>
         </label>
         <label class="item item-input item-select">
           <div class="input-label">
-            education focus
+            Occupation
           </div>
-          <select ng-model="newUser.education_sub">
-            <option value="polisci">political science</option>
-            <option value="math">mathematics</option>
-            <option value="science">science</option>
-            <option value="english">english</option>
-          </select>
-        </label>
-        <label class="item item-input item-select">
-          <div class="input-label">
-            occupationial field
-          </div>
-          <select ng-model="newUser.occupation">
-            <option value="agriculture">management</option>
-            <option value="mining">mining</option>
-            <option value="manufacturing">manufacturing</option>
-            <option value="education">educational services</option>
-          </select>
-        </label>
-        <label class="item item-input item-select">
-          <div class="input-label">
-            occupational focus
-          </div>
-          <select ng-model="newUser.occupation_sub">
-            <option value="financial">financial</option>
-            <option value="math">mathematics</option>
-            <option value="science">science</option>
-            <option value="english">english</option>
+          <select ng-model="newUser.occupation" required>
+            <optgroup label="Management">
+              <option value="Chief Executives">Chief executives</option>
+              <option value="Legislators">Legislators</option>
+              <option value="Marketing and sales">Marketing and sales</option>
+            </optgroup>
+            <optgroup label="Computer and Mathematical">
+              <option value="Computer systems analysts">Computer systems analysts</option>
+              <option value="Web developers">Web developers</option>
+            </optgroup>
+            <optgroup label="Legal">
+              <option value="Judges, Magistrate Judges, Magistrates">Judges, Magistrate Judges, Magistrates</option>
+              <option value="Lawyers">Lawyers</option>
+            </optgroup>
           </select>
         </label>
         <label class="item item-input">
-          <input type="text" placeholder="email" ng-model="newUser.email">
+          <input type="text" placeholder="Email" ng-model="newUser.email" required>
         </label>
         <span class="errors">{{ email }}</span>
         <label class="item item-input">
-          <input type="password" placeholder="password" ng-model="newUser.password">
+          <input type="password" placeholder="Password" ng-model="newUser.password" required>
         </label>
         <span class="errors">{{ password }}</span>
         <label class="item item-input">
-          <input type="password" placeholder="password confirmation" ng-model="newUser.password_confirmation">
+          <input type="password" placeholder="Password Confirmation" ng-model="newUser.password_confirmation" required>
         </label>
         <div>
           <button class="button button-block button-positive" type="submit">CREATE ACCOUNT</button>
