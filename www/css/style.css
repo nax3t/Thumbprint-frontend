@@ -1,19 +1,36 @@
-
-/*  ################################################################
-  1. General styles I implemented (Global Varialbes)
-################################################################# */
-
 * {
-  font-family: 'Lato', sans-serif;
+	color: #FFF;
+  font-family: 'Karla', sans-serif;
+  margin: 0;
 }
 
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+footer, .push {
+	height: 4em;
+}
+
+footer {
+	background-color: #724788;
+	text-align: center;
+	padding-top: 15px;
+}
 
 .main-bg {
-	background: -webkit-linear-gradient(0deg, #5f2c82 10%, #49a09d 90%); /* Chrome 10+, Saf5.1+ */
-	  background:    -moz-linear-gradient(0deg, #5f2c82 10%, #49a09d 90%); /* FF3.6+ */
-	  background:     -ms-linear-gradient(0deg, #5f2c82 10%, #49a09d 90%); /* IE10 */
-	  background:      -o-linear-gradient(0deg, #5f2c82 10%, #49a09d 90%); /* Opera 11.10+ */
-	  background:         linear-gradient(0deg, #5f2c82 10%, #49a09d 90%); /* W3C */
+	background: -webkit-linear-gradient(0deg, #3F3054 10%, #7F9AB0 90%); /* Chrome 10+, Saf5.1+ */
+	  background:    -moz-linear-gradient(0deg, #3F3054 10%, #7F9AB0 90%); /* FF3.6+ */
+	  background:     -ms-linear-gradient(0deg, #3F3054 10%, #7F9AB0 90%); /* IE10 */
+	  background:      -o-linear-gradient(0deg, #3F3054 10%, #7F9AB0 90%); /* Opera 11.10+ */
+	  background:         linear-gradient(0deg, #3F3054 10%, #7F9AB0 90%); /* W3C */
 }
 
 #logo-main {
@@ -23,7 +40,7 @@
 
 #logo-wrapper {
 	display: table;
-	margin: 0 auto;
+	margin: 40px auto 10px;
 }
 
 .main-header {
@@ -41,10 +58,6 @@
 	color: #FFF;
 	text-shadow: 1px 1px 0px #5F2C82;
 	font-size: 50px;
-}
-
-.main-padding  {
-	margin: 50px 0px;
 }
 
 .ion-power-margin {
