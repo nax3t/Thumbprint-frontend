@@ -21,7 +21,7 @@ angular.module('thumbprint.controllers', [])
       return $state.go('app.welcome');
     }).error(function(data) {
       $ionicLoading.hide();
-      $scope.error = "Invalid username or password"
+      $scope.error = "Invalid email or password"
     });
   };
 
@@ -40,13 +40,13 @@ angular.module('thumbprint.controllers', [])
         $ionicLoading.hide();
         return $state.go('app.welcome');
       }).error(function(data) {
-        $scope.username = "";
+        $scope.email = "";
         $scope.password = "";
         $ionicLoading.hide();
         if (data.password) {
           $scope.password = "Password " + data.password[0];
-        } else if(data.username) {
-          $scope.username = "Username " + data.username[0];
+        } else if(data.email) {
+          $scope.email = "Email " + data.email[0];
         }
       });
     };

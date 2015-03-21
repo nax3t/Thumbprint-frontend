@@ -3,15 +3,15 @@
     <form ng-submit="createUser(newUser)">
       <div class="list list-inset">
         <label class="item item-input">
-          <input type="text" placeholder="Username" ng-model="newUser.username">
+          <input type="text" placeholder="email" ng-model="newUser.email">
         </label>
-        <span class="errors">{{ username }}</span>
+        <span class="errors">{{ email }}</span>
         <label class="item item-input">
-          <input type="password" placeholder="Password" ng-model="newUser.password">
+          <input type="password" placeholder="password" ng-model="newUser.password">
         </label>
         <span class="errors">{{ password }}</span>
         <label class="item item-input">
-          <input type="password" placeholder="Password Confirmation" ng-model="newUser.password_confirmation">
+          <input type="password" placeholder="password confirmation" ng-model="newUser.password_confirmation">
         </label>
         <div>
           <button class="button button-block button-positive" type="submit">Create account</button>
