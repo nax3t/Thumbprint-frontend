@@ -36,6 +36,13 @@ var app = angular.module("thumbprint", ["ionic", "thumbprint.factories", "thumbp
   });
 
   return $urlRouterProvider.otherwise("/");
+})
+
+.directive('billcards', function() {
+  return {
+    restrict: 'E',
+    templateUrl: 'templates/bill-cards/index.html'
+  }
 });
 
 

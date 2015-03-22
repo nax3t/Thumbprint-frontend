@@ -4,15 +4,11 @@
   </ion-nav-buttons>
 
   <ion-content class="padding">
-    <h4>Signed in as: <strong>{{ user.first + " " + user.last }}</strong></h4>
-   <!--  <ion-list show-delete="shouldShowDelete">
-      <ion-item ng-repeat="attendance in attendances">
-      	<ion-delete-button class="ion-minus-circled" ng-click="deleteAttendance(attendance.id)"></ion-delete-button>
-        <strong>{{ attendance.name }}</strong> - {{ attendance.secret }} - <strong>{{ attendance.created_at | date:'h:mma' }}</strong>
-      </ion-item>
-    </ion-list>
-    <ion-toggle ng-model="shouldShowDelete" ng-show="user.admin">
-      Show Delete?
-    </ion-toggle> -->
+    <div class="button-bar">
+      <a class="button">First</a>
+      <a class="button">Second</a>
+      <a class="button">Third</a>
+    </div>
+    <billcards></billcards>
   </ion-content>
 </ion-view>

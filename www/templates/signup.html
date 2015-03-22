@@ -2,16 +2,16 @@
   <ion-content class="has-header">
     <form ng-submit="createUser(newUser)">
       <div class="list list-inset">
-        <label class="item item-input">
+        <label class="item signup item-input">
           <input type="text" placeholder="First Name" ng-model="newUser.first" required>
         </label>
-        <label class="item item-input">
+        <label class="item signup item-input">
           <input type="text" placeholder="Last Name" ng-model="newUser.last">
         </label>
-        <label class="item item-input">
+        <label class="item signup item-input">
           <input type="text" placeholder="Zip (full zipcode ex. 07704-3203)" ng-model="newUser.zip" required>
         </label>
-        <label class="item item-input item-select">
+        <label class="item signup item-input item-select">
           <div class="input-label">
             Education
           </div>
@@ -28,7 +28,7 @@ business)</option>
             </optgroup>
           </select>
         </label>
-        <label class="item item-input item-select">
+        <label class="item signup item-input item-select">
           <div class="input-label">
             Occupation
           </div>
@@ -48,15 +48,15 @@ business)</option>
             </optgroup>
           </select>
         </label>
-        <label class="item item-input">
+        <label class="item signup item-input">
           <input type="text" placeholder="Email" ng-model="newUser.email" required>
         </label>
         <span class="errors">{{ email }}</span>
-        <label class="item item-input">
+        <label class="item signup item-input">
           <input type="password" placeholder="Password" ng-model="newUser.password" required>
         </label>
         <span class="errors">{{ password }}</span>
-        <label class="item item-input">
+        <label class="item signup item-input">
           <input type="password" placeholder="Password Confirmation" ng-model="newUser.password_confirmation" required>
         </label>
         <div>

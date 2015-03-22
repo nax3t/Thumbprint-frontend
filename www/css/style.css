@@ -63,7 +63,7 @@ footer {
 	font-size: 50px;
 }
 
-.ion-power-margin {
+.ion-ico-margin {
 	margin-right: 5px;
 }
 
@@ -98,7 +98,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"],
 	background-color: rgba(0,0,0,0);
 }
 
-.item {
+.item.signup {
 	background-color: rgba(0,0,0,.09);
 	margin-bottom: 10px;
 }
