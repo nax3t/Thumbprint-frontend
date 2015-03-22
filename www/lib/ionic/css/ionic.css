@@ -2836,8 +2836,8 @@ a.subdued {
     .bar.bar-energized.bar-footer {
       background-image: linear-gradient(180deg, #d39211, #d39211 50%, transparent 50%); }
   .bar.bar-royal {
-    border-color: #552bdf;
-    background-color: #8a6de9;
+    border-color: #5a356d;
+    background-color: #724788;
     background-image: linear-gradient(0deg, #552bdf, #552bdf 50%, transparent 50%);
     color: #fff; }
     .bar.bar-royal .title {
