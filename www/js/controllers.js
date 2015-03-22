@@ -31,6 +31,15 @@ angular.module('thumbprint.controllers', [])
   // Assign User
   $scope.user = $rootScope.current_user;
 
+  // Seed Bills
+  $scope.bills = [
+      { "desc": "This bill repeals the Patient Protection and Affordable Care Act, effective as of its enactment. Provisions of law amended by that Act are restored. This bill repeals the health care provisions of the Health Care and Education and Reconciliation Act of 2010, effective as of...",
+      "title": "H.R.596 — 114th Congress (2015-2016)" },
+      { "desc": "This bill repeals the Patient Protection and Affordable Care Act, effective as of its enactment. Provisions of law amended by that Act are restored. This bill repeals the health care provisions of the Health Care and Education and Reconciliation Act of 2010, effective as of...",
+      "title": "H.R.596 — 114th Congress (2015-2016)" },
+      { "desc": "This bill repeals the Patient Protection and Affordable Care Act, effective as of its enactment. Provisions of law amended by that Act are restored. This bill repeals the health care provisions of the Health Care and Education and Reconciliation Act of 2010, effective as of...",
+      "title": "H.R.596 — 114th Congress (2015-2016)" }
+  ]
 }])
 
 .controller("UsersCtrl", [
