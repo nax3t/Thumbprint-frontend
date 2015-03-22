@@ -1,5 +1,9 @@
+    <label class="item-input-wrapper">
+        <i class="icon ion-ios7-search placeholder-icon"></i>
+        <input type="search" placeholder="Search" ng-model="searchText">
+      </label>
     <div class="card">
-      <div class="item bill-cards item-text-wrap" ng-repeat="bill in bills | filter:searchText">
+      <div class="item bill-cards item-text-wrap" ng-repeat="bill in bills | filter:catFilter | filter:searchText">
         <h3>{{ bill.title }}</h3>
         
         <p>{{ bill.desc }}</p>

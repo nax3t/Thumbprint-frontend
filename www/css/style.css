@@ -69,7 +69,7 @@ footer {
 }
 
 .has-sub-header {
-	padding-top: 35px;
+	padding-top: 55px;
 }
 
 .main-logo {
@@ -97,7 +97,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"],
 }
 
 textarea, input[type="search"], input[type="tel"], input[type="color"] {
-  color: #724788;
+  color: #444;
   background-color: #eee;
 }
 
