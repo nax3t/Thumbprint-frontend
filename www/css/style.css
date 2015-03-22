@@ -1,3 +1,7 @@
+/* remove later */
+.black {
+	color: #000;
+}
 * {
   font-family: 'Karla', sans-serif;
   margin: 0;
@@ -54,6 +58,10 @@ footer {
 	font-size: 40px;
 	letter-spacing: 5px;
 		font-weight: bold;
+}
+
+.has-sub-header {
+	padding-top: 35px;
 }
 
 .main-logo {
