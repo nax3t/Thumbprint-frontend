@@ -15,6 +15,14 @@ a {
 	color: #FFF;
 }
 
+.item p { 
+	color :#FFF;
+}
+
+.item h3 {
+	color: #FFF;
+}
+
 .wrapper {
 	min-height: 100%;
 	height: auto !important;
@@ -109,6 +117,14 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"],
 .item.signup {
 	background-color: rgba(0,0,0,.09);
 	margin-bottom: 10px;
+}
+
+.item.bill-cards {
+	background-color: rgba(0,0,0,.3);
+}
+
+.card {
+	background-color:rgba(0,0,0,0);
 }
 
 .col {
