@@ -33,15 +33,15 @@ angular.module('thumbprint.controllers', [])
 
   // Seed Bills
   $scope.bills = [
-      { "desc": "Executive, This bill repeals the Patient Protection and Affordable Care Act, effective as of its enactment. Provisions of law amended by that Act are restored. This bill repeals the health care provisions of the Health Care and Education and Reconciliation Act of 2010, effective as of...",
-      "title": "H.R.596 — 114th Congress (2015-2016)",
-      "type": "executive" },
-      { "desc": "Senate, This bill repeals the Patient Protection and Affordable Care Act, effective as of its enactment. Provisions of law amended by that Act are restored. This bill repeals the health care provisions of the Health Care and Education and Reconciliation Act of 2010, effective as of...",
-      "title": "H.R.596 — 114th Congress (2015-2016)",
+      { "desc": "Amends the Brady Handgun Violence Prevention Act to prohibit the sale or other disposition of a firearm or ammunition to any person knowing or having reasonable cause to believe that such person: (1) has been convicted of a crime of violence in the previous 10 years...",
+      "title": "Keeping Guns from High Risk Individuals Act",
+      "type": "house" },
+      { "desc": "Amends title XI of the Social Security Act (SSAct) to direct the Secretary of Health and Human Services, as part of the pediatric quality measures program and the Medicaid Quality Measurement Program (MQMP), to: (1) review certain quality measures endorsed under the Medicare program...",
+      "title": "Quality Care for Moms and Babies Act",
       "type": "senate" },
-      { "desc": "House, This bill repeals the Patient Protection and Affordable Care Act, effective as of its enactment. Provisions of law amended by that Act are restored. This bill repeals the health care provisions of the Health Care and Education and Reconciliation Act of 2010, effective as of...",
-      "title": "H.R.596 — 114th Congress (2015-2016)",
-      "type": "house" }
+      { "desc": "Amends federal copyright law to revise the definition of \"widow\" or \"widower\" for purposes of provisions concerning the transfer of a copyright to an author's spouse or other next of kin following the author's death. Declares that an individual is the widow or widower of an author if the courts of the state...",
+      "title": "Copyright and Marriage Equality Act",
+      "type": "executive" }
   ]
 }])
 
