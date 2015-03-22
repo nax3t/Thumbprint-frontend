@@ -7,7 +7,7 @@ angular.module('thumbprint.controllers', [])
   // Logout logic
   $scope.logout = function() {
     $ionicLoading.show();
-    return $http["delete"]("http://localhost:3000/sessions/" + $rootScope.current_user.id + ".json").success(function(data) {
+    return $http["delete"]("https://thumbprintapp.herokuapp.com/sessions/" + $rootScope.current_user.id + ".json").success(function(data) {
       $ionicLoading.hide()
       return $state.go('main');
     });
@@ -16,7 +16,7 @@ angular.module('thumbprint.controllers', [])
   // Login logic
   $scope.addSession = function(newUser) {
     $ionicLoading.show();
-    return $http.post("http://localhost:3000/login.json", {
+    return $http.post("https://thumbprintapp.herokuapp.com/login.json", {
       user: newUser
     }).success(function(user) {
       $rootScope.current_user = user;
